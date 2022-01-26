@@ -8,5 +8,13 @@ class FooderlichTab {
 }
 
 class AppStateManager extends ChangeNotifier {
+  bool _initialized = false;
+  bool _loggedIn = false;
+  bool _onboardingComplete = false;
+  int _selectedTab = FooderlichTab.explore;
 
+  bool get isInitialized => _initialized;
+  bool get isLoggedIn => _loggedIn;
+  bool get isOnboardingComplete => _onboardingComplete;
+  int get getSelectedTab => _selectedTab;
 }
