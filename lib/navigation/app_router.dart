@@ -48,6 +48,13 @@ class AppRouter extends RouterDelegate
             },
             onUpdate: (item, index) {},
           ),
+        if (groceryManager.selectedIndex != -1)
+          GroceryItemScreen.page(
+            onCreate: (_) {},
+            onUpdate: (item, index) {
+              groceryManager.updateItem(item, index);
+            },
+          ),
       ],
     );
   }
