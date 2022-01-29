@@ -42,9 +42,9 @@ class _FooderlichState extends State<Fooderlich> {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        // ChangeNotifierProvider(
-        //   create: (context) => _groceryManager,
-        // ),
+        ChangeNotifierProvider(
+          create: (context) => _groceryManager,
+        ),
         ChangeNotifierProvider(
           create: (context) => _profileManager,
         ),
