@@ -31,9 +31,9 @@ class WebViewScreenState extends State<WebViewScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('raywenderlich.com'),
-      ),
+      // appBar: AppBar(
+      //   title: const Text('raywenderlich.com'),
+      // ),
       body: const WebView(
         initialUrl: 'https://www.raywenderlich.com/',
       ),
