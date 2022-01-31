@@ -27,7 +27,7 @@ class EmptyGroceryScreen extends StatelessWidget {
             const Text(
               'Shopping for ingredients?\n'
               'Tap the + button to write them down!',
-              // textAlign: TextAlign.center,
+              textAlign: TextAlign.center,
             ),
             MaterialButton(
               textColor: Colors.white,
